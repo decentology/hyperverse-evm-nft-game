@@ -16,19 +16,29 @@ jobs:
           # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
           fetch-depth: 0
 
-      - name: Setup Node.js 16.x
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: latest
+
+      - name: Setup Node v16
         uses: actions/setup-node@master
         with:
-          node-version: 16.x
+          node-version: '16.x'
+          cache: 'pnpm'
 
       - name: Install Dependencies
-        run: npm install
+        run: pnpm install
+
+      - name: Add NPM_TOKEN
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@master
         with:
-          publish: npm run publish 
+          publish: pnpm run release 
           commit: "chore(release): update package versions"
           title: "Upcoming Release Changes"
         env:
