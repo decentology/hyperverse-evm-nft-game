@@ -1,6 +1,6 @@
 {
 	"name": "@hyperverse/evm-nft-game",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"source": "./source/index.ts",
 	"types": "./distribution/index.d.ts",
 	"main": "./distribution/index.js",
