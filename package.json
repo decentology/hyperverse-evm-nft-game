@@ -20,7 +20,8 @@
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
 		"release": "changeset publish",
-		"prerelease": "pnpm run bootstrap && pnpm run build"
+		"prerelease": "pnpm run bootstrap && pnpm run build",
+		"changeset": "changeset"
 	},
 	"publishConfig": {
 		"access": "public"

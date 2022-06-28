@@ -5,7 +5,7 @@
 
 # Hyperverse NFT Game Module
 
-# Documentation
+## Documentation
 For more information and learn about Hyperverse checkout the resources below
 
 - [Hyperverse Documentation](https://docs.hyperverse.dev/)
