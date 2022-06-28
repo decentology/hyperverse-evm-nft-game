@@ -1,9 +1,32 @@
 {
-	"extends": "@decentology/config/react-library.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"declaration": true,
+		"declarationMap": true,
+		"esModuleInterop": true,
+		"emitDecoratorMetadata": true,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"inlineSources": false,
+		"isolatedModules": false,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"preserveWatchOutput": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"resolveJsonModule": true,
+		"composite": false,
+		"lib": ["ES2017", "DOM"],
+		"module": "ES6",
+		"target": "ES6",
+		"preserveSymlinks": true,
+		"outDir": "distribution",
+		"importHelpers": false,
+		"moduleResolution": "Node",
+		"jsx": "react-jsx"
+	},
 	"include": ["source/**/*.ts", "source/**/*.tsx", "**/*.json"],
 	"exclude": ["distribution", "node_modules"],
-	"compilerOptions": {
-		"resolveJsonModule": true,
-		"composite": false
-	}
+
 }
