@@ -1,5 +1,11 @@
 # @decentology/hyperverse-ethereum-erc721
 
+## 0.0.4
+
+### Patch Changes
+
+- 3c26047: add export map
+
 ## 0.0.3
 
 ### Patch Changes
