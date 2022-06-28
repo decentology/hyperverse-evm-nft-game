@@ -1,5 +1,11 @@
 # @decentology/hyperverse-ethereum-erc721
 
+## 0.0.3
+
+### Patch Changes
+
+- 885ebbc: Fix rollup, tsconfig to bundle propoerly
+
 ## 0.0.2
 
 ### Patch Changes
