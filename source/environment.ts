@@ -6,13 +6,13 @@ import {
   NetworkConfig,
 } from "@decentology/hyperverse";
 
-import Contracts from "../contracts.json";
-import { ContractInterface } from "ethers";
-import NFTGame1FactoryABI from "../artifacts/contracts/NFTGameFactory.sol/NFTGameFactory.json";
-import NFTGame1ABI from "../artifacts/contracts/NFTGame.sol/NFTGame.json";
+import Contracts from '../contracts.json';
+import { ContractInterface } from 'ethers';
+import NFTGameFactoryABI from '../artifacts/NFTGameFactory.sol/NFTGameFactory.json';
+import NFTGameABI from '../artifacts/contracts/NFTGame.sol/NFTGame.json';
 
-export const FactoryABI = NFTGame1FactoryABI.abi as ContractInterface;
-export const ContractABI = NFTGame1ABI.abi as ContractInterface;
+export const FactoryABI = NFTGameFactoryABI.abi as ContractInterface;
+export const ContractABI = NFTGameABI.abi as ContractInterface;
 
 const environment = Contracts as EvmEnvironment;
 

@@ -14,13 +14,13 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const ERC721 = await hre.ethers.getContractFactory("ERC721");
+  const ERC721 = await hre.ethers.getContractFactory("NFTGame");
   // Gas cost: 1875000000
   const masterContract = await ERC721.deploy();
   console.log("Master contract deployment");
   console.log(masterContract);
 
-  const ERC721Factory = await hre.ethers.getContractFactory("ERC721Factory");
+  const ERC721Factory = await hre.ethers.getContractFactory("NFTGameFactory");
   const factoryContract = await ERC721Factory.deploy(masterContract.address);
 
   await masterContract.deployed();

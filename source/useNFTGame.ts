@@ -39,5 +39,5 @@ function NFTGameState(initialState: { tenantId: string } = { tenantId: "" }) {
 export const NFTGame = createContainer(NFTGameState);
 
 export function useNFTGame() {
-  return useContainer(NFTGame);
+	return useContainer(NFTGame);
 }
